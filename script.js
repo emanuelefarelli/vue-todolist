@@ -14,7 +14,7 @@ createApp({
         },
         {
           text: 'Lavare la macchina',
-          done: true,
+          done: false,
         },
         {
           text: 'Riparare il lavandino',
@@ -38,6 +38,16 @@ createApp({
 
     deleteItem(elementIndex){
       this.list.splice(elementIndex, 1);
+    },
+
+    addItem(itemValue){
+      console.log(itemValue);
+      item = {
+        text: itemValue,
+        done: false,
+      }
+      this.list.push(item);
+      this.toDoItem = '';
     }
   }
 }).mount('#app');
