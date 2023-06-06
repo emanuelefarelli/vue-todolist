@@ -21,13 +21,14 @@
     <div id="app">
         <main class="bg-primary">
             <ul>
-                <li v-for="item in list">
-                    <div v-if="item.done" class="text-decoration-line-through">
+                <li class="d-flex justify-content-between align-items-center" v-for="(item,index) in list">
+                    <div v-if="item.done" class="text-decoration-line-through"  @click="toDoDone(index)">
                         {{ item.text }}
                     </div>
-                    <div v-else>
+                    <div v-else  @click="toDoDone(index)">
                         {{ item.text }}
                     </div>
+                    <i class="fa-sharp fa-solid fa-delete-left" @click = "deleteItem(index)"></i>
                 </li>
             </ul>
         </main>

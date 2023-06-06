@@ -30,8 +30,14 @@ createApp({
         },
       ]
     }
+  },
+  methods: {
+    toDoDone(elementIndex){
+      this.list[elementIndex].done = !this.list[elementIndex].done;
+    },
+
+    deleteItem(elementIndex){
+      this.list.splice(elementIndex, 1);
+    }
   }
-  // methods: {
-    
-  // }
 }).mount('#app');
