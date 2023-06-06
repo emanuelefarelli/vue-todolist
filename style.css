@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    width: 50%;
+    background-color: white;
+}
+
+li{
+    padding: 0.5rem;
+}
+
+main{
+    max-width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: calc((100vh - 600px) / 2);
+    padding: 2rem;
+}

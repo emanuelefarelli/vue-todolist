@@ -5,28 +5,28 @@ createApp({
     return {
       list: [
         {
-            text: 'Prendere il latte',
-            bool: false,
+          text: 'Prendere il latte',
+          done: false,
         },
         {
-            text: 'Prendere il caffè',
-            bool: false,
+          text: 'Prendere il caffè',
+          done: false,
         },
         {
-            text: 'Lavare la macchina',
-            bool: false,
+          text: 'Lavare la macchina',
+          done: true,
         },
         {
-            text: 'Riparare il lavandino',
-            bool: false,
+          text: 'Riparare il lavandino',
+          done: false,
         },
         {
-            text: 'Mettere a posto il garage',
-            bool: false,
+          text: 'Mettere a posto il garage',
+          done: false,
         },
         {
-            text: 'Assemblare computer',
-            bool: false,
+          text: 'Assemblare computer',
+          done: false,
         },
       ]
     }
